@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 @Component({
-  selector: 'covid',
-  templateUrl: './covid.component.html',
-  styleUrls: ['./covid.component.css']
+  selector: 'by-country',
+  templateUrl: './by-country.component.html',
+  styleUrls: ['./by-country.component.css']
 })
-export class CovidComponent {
+export class ByCountryComponent {
   response ;
   input:string ;
   link : string ;
@@ -261,7 +261,7 @@ export class CovidComponent {
     this.input = selectName.value ;
     this.http.get('https://api.covid19api.com/total/country/' + this.input ).subscribe(result=>{
       console.log(result);
-      this.link = "/covid-statics/" + this.input ;
+      this.link = "/statistics/" + this.input ;
       this.response = result ;
     })
     

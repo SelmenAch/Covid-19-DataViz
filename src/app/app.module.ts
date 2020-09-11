@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
-import { CovidComponent } from './covid/covid.component';
-import { CovidStaticsComponent } from './covid-statics/covid-statics.component';
+import { ByCountryComponent } from './by-country/by-country.component';
+import { StatisticsComponent } from './statistics/statistics.component';
 import { RouterModule } from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,8 +14,8 @@ import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CovidComponent,
-    CovidStaticsComponent,
+    ByCountryComponent,
+    StatisticsComponent,
     IndexComponent,
     MapComponent,
     AboutComponent
@@ -27,8 +27,8 @@ import { AboutComponent } from './about/about.component';
     ChartsModule,
     RouterModule.forRoot([
       {path:'',component:IndexComponent},
-      {path:'bycountry',component:CovidComponent},
-      {path:'covid-statics/:country',component:CovidStaticsComponent},
+      {path:'by-country',component:ByCountryComponent},
+      {path:'statistics/:country',component:StatisticsComponent},
       {path:'map',component:MapComponent},
       {path:'about',component:AboutComponent}
     ]),

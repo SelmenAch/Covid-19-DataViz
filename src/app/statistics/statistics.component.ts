@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {Chart} from 'chartjs';
+
 @Component({
-  selector: 'app-covid-statics',
-  templateUrl: './covid-statics.component.html',
-  styleUrls: ['./covid-statics.component.css']
+  selector: 'app-statistics',
+  templateUrl: './statistics.component.html',
+  styleUrls: ['./statistics.component.css']
 })
-export class CovidStaticsComponent {
+export class StatisticsComponent {
   country;
   response  ;
   response1 ;
@@ -25,7 +25,7 @@ export class CovidStaticsComponent {
           if (element.CountryCode === this.country){
             this.response1 = element ;
           }
-          
+                    
         });
      })
      setTimeout( ()=> {

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CovidStaticsComponent } from './covid-statics.component';
+import { ByCountryComponent } from './by-country.component';
 
-describe('CovidStaticsComponent', () => {
-  let component: CovidStaticsComponent;
-  let fixture: ComponentFixture<CovidStaticsComponent>;
+describe('ByCountryComponent', () => {
+  let component: ByCountryComponent;
+  let fixture: ComponentFixture<ByCountryComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CovidStaticsComponent ]
+      declarations: [ ByCountryComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CovidStaticsComponent);
+    fixture = TestBed.createComponent(ByCountryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
